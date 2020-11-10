@@ -1,0 +1,4247 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background: url("//awscdnnrxwsone.95vy.com/gc_file/webpay/images/loading_bg.jpg") no-repeat;
+  z-index: 1;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.main .start_bg {
+  width: 100%;
+  height: 100%;
+  background: url("//awscdnnrxwsone.95vy.com/gc_file/webpay/images/start_bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  z-index: 1020;
+  display: none;
+}
+.main .start_bg .start_game {
+  width: 8rem;
+  height: 3rem;
+  background: url(//awscdnnrxwsone.95vy.com/gc_file/webpay/images/start_game.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 87%;
+  left: 54%;
+  transform: translate(-54%, -82%);
+  cursor: pointer;
+}
+.main .automatic_login_ns {
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.main .automatic_login_ns .login_logo_ns {
+  text-align: center;
+  border-bottom: 1px solid #d5d5d5;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  background-color: #ffffff;
+  height: 52px;
+}
+.main .automatic_login_ns .login_logo_ns .back_ns {
+  height: 28px;
+  position: absolute;
+  top: 42%;
+  margin-top: -8px;
+  left: 15px;
+}
+.main .automatic_login_ns .login_inp_ns {
+  padding: 0 15px;
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
+}
+.main .automatic_login_ns .login_inp_ns .select_use {
+  position: relative;
+  top: 10px;
+  width: 99%;
+  height: 52.5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+.main .automatic_login_ns .login_inp_ns .select_use .sel-img {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 30px;
+  position: absolute;
+  left: 0;
+}
+.main .automatic_login_ns .login_inp_ns .select_use .sel-title {
+  width: 165px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  left: 60px;
+}
+.main .automatic_login_ns .login_inp_ns .select_use .sel-up {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 30px;
+  position: absolute;
+  color: #32b16c;
+  right: 5px;
+  transform: rotate(180deg);
+  display: none;
+}
+.main .automatic_login_ns .login_inp_ns .select_use .sel-down {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 30px;
+  position: absolute;
+  right: 5px;
+}
+.main .automatic_login_ns .login_inp_ns .down_list {
+  width: 287px;
+  max-height: 168px;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  z-index: 10;
+  margin-top: 2px;
+  overflow: auto;
+  display: none;
+}
+.main .automatic_login_ns .login_inp_ns .down_list ul li {
+  width: 100%;
+  height: 52.5px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+.main .automatic_login_ns .login_inp_ns .down_list ul li .item-img {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 30px;
+  position: absolute;
+  left: 0;
+}
+.main .automatic_login_ns .login_inp_ns .down_list ul li .item-title {
+  width: 165px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  left: 60px;
+}
+.main .automatic_login_ns .login_inp_ns .down_list ul li .item-down {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 30px;
+  position: absolute;
+  right: 5px;
+}
+.main .automatic_login_ns .login_inp_ns .down_list ul li:last-child {
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+.main .automatic_login_ns .login_inp_ns #enter_game_ns {
+  background: #32b16c;
+  width: 100%;
+  border: none;
+  height: 65px;
+  border-radius: 6px;
+  margin: 7px 0;
+  font-size: 18px;
+  color: white;
+}
+.main .automatic_login_ns .login_inp_ns .select_title_ns {
+  margin-top: 16px;
+  height: 32.5px;
+  font-size: 16px;
+  position: relative;
+}
+.main .automatic_login_ns .login_inp_ns .select_title_ns .dashed_line {
+  border: 1px dashed #d5d5d5;
+}
+.main .automatic_login_ns .login_inp_ns .select_title_ns .handle_head_title {
+  height: 32.5px;
+  line-height: 32.5px;
+  background-color: #ffffff;
+  position: absolute;
+  top: -16.25px;
+  left: 50%;
+  margin-left: -87px;
+  width: 170px;
+  color: #787878;
+  text-align: center;
+}
+.main .automatic_login_ns .login_inp_ns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main .automatic_login_ns .login_inp_ns ul li {
+  width: 33.3%;
+  text-align: center;
+  float: left;
+}
+.main .automatic_login_ns .login_inp_ns ul li p {
+  margin: 2px;
+  padding: 0;
+}
+.main .automatic_login_ns .login_inp_ns ul li .handle {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background: white;
+  line-height: 50px;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  margin-left: 23px;
+  border: 3px solid #cae5f2;
+}
+.main .automatic_login_ns .login_inp_ns ul li .handle img {
+  width: 55px;
+  height: 55px;
+  padding-right: 5px;
+}
+.main .automatic_login_ns .login_inp_ns ul li .handle i {
+  font-size: 32px;
+}
+.main .automatic_login_ns .login_inp_ns ul li .handle2 {
+  background: #a8a8a8;
+}
+.main .automatic_login_ns .login_inp_ns ul li .handle2 i {
+  line-height: 50px;
+}
+.main .automatic_login_ns .login_inp_ns ul li .handle3 {
+  background: #e0620d;
+}
+.main .automatic_login_ns .login_inp_ns ul li .handle3 i {
+  line-height: 46px;
+}
+.main .automatic_login_ns .login_inp_ns .clearfix:after {
+  display: block;
+  font-size: 0;
+  clear: both;
+  height: 0;
+  content: "";
+}
+.main .login_inp {
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  display: none;
+}
+.main .login_inp .login_logo_inp {
+  text-align: center;
+  border-bottom: 1px solid #d5d5d5;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  background-color: #ffffff;
+  height: 52px;
+}
+.main .login_inp .login_logo_inp .back_ns {
+  height: 28px;
+  position: absolute;
+  top: 42%;
+  margin-top: -8px;
+  left: 15px;
+}
+.main .login_inp .login_dl_ns {
+  padding: 5px 15px;
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
+}
+.main .login_inp .login_dl_ns .login_acnum_ns {
+  margin-top: 7px;
+  position: relative;
+}
+.main .login_inp .login_dl_ns .login_acnum_ns i {
+  height: 26px;
+  position: absolute;
+  left: 19px;
+  top: 15px;
+  font-size: 20px;
+  color: black;
+}
+.main .login_inp .login_dl_ns .login_acnum_ns input {
+  width: 100%;
+  padding-left: 52px;
+  color: #9d9d9d;
+  border-radius: 6px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  height: 58px;
+  border: 1.5px solid #d5d5d5;
+  font-size: 18px;
+}
+.main .login_inp .login_dl_ns .login_acnum_ns input:focus {
+  outline: 0;
+}
+.main .login_inp .login_dl_ns .login_acnum_ns .clear_ns {
+  display: none;
+  position: absolute;
+  right: 58px !important;
+  height: 32px !important;
+  top: 4px !important;
+}
+.main .login_inp .login_dl_ns .login_acnum_ns .clear_ns img {
+  height: 0.8rem;
+  position: absolute;
+  left: 0.15rem;
+  top: 0.05rem;
+}
+.main .login_inp .login_dl_ns .login_acnum_ns .show_ns {
+  display: none;
+  position: absolute;
+  right: 58px !important;
+  height: 32px !important;
+  top: 5px !important;
+}
+.main .login_inp .login_dl_ns .login_acnum_ns .show_ns img {
+  height: 0.8rem;
+  position: absolute;
+  left: 0.15rem;
+  top: 0.05rem;
+}
+.main .login_inp .login_dl_ns .forget_password_ns {
+  padding: 6px 2px;
+  color: black;
+}
+.main .login_inp .login_dl_ns .login_button_ns {
+  font-size: 22px;
+  width: 100%;
+  height: 52px;
+  text-align: center;
+  line-height: 52px;
+  background-color: #32b16c;
+  color: #ffffff;
+  border-radius: 10px;
+  letter-spacing: 10px;
+  border: none;
+}
+.main .login_inp .login_dl_ns .p_span {
+  width: 100%;
+  margin: 10px 2px;
+}
+.main .login_inp .login_dl_ns .p_span .account_management_ns {
+  margin: 0 2px;
+  float: right;
+}
+.main .forget_password {
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  display: none;
+}
+.main .forget_password .login_logo_forget {
+  text-align: center;
+  border-bottom: 1px solid #d5d5d5;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  background-color: #ffffff;
+  height: 52px;
+}
+.main .forget_password .login_logo_forget .back_ns {
+  height: 28px;
+  position: absolute;
+  top: 42%;
+  margin-top: -8px;
+  left: 15px;
+}
+.main .forget_password .forget_password_ns {
+  padding: 5px 15px;
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
+}
+.main .forget_password .forget_password_ns .login_acnum_ns {
+  margin-top: 7px;
+  position: relative;
+}
+.main .forget_password .forget_password_ns .login_acnum_ns i {
+  height: 26px;
+  position: absolute;
+  left: 19px;
+  top: 15px;
+  font-size: 20px;
+  color: black;
+}
+.main .forget_password .forget_password_ns .login_acnum_ns input {
+  width: 100%;
+  padding-left: 52px;
+  color: #9d9d9d;
+  border-radius: 6px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  height: 58px;
+  border: 1.5px solid #d5d5d5;
+  font-size: 18px;
+}
+.main .forget_password .forget_password_ns .login_acnum_ns input:focus {
+  outline: 0;
+}
+.main .forget_password .forget_password_ns .login_acnum_ns .clear_ns {
+  display: none;
+  position: absolute;
+  right: 58px !important;
+  height: 32px !important;
+  top: 4px !important;
+}
+.main .forget_password .forget_password_ns .login_acnum_ns .clear_ns img {
+  height: 0.8rem;
+  position: absolute;
+  left: 0.15rem;
+  top: 0.05rem;
+}
+.main .forget_password .forget_password_ns .login_acnum_ns .show_ns {
+  display: none;
+  position: absolute;
+  right: 58px !important;
+  height: 32px !important;
+  top: 5px !important;
+}
+.main .forget_password .forget_password_ns .login_acnum_ns .show_ns img {
+  height: 0.8rem;
+  position: absolute;
+  left: 0.15rem;
+  top: 0.05rem;
+}
+.main .forget_password .forget_password_ns .retrieve_password_ns {
+  margin-top: 16px;
+  font-size: 26px;
+  width: 100%;
+  height: 52px;
+  text-align: center;
+  line-height: 52px;
+  background-color: #32b16c;
+  color: #ffffff;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  border: none;
+}
+.main .login_zc {
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  display: none;
+}
+.main .login_zc .login_logo_zc {
+  text-align: center;
+  border-bottom: 1px solid #d5d5d5;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  background-color: #ffffff;
+  height: 52px;
+}
+.main .login_zc .login_logo_zc .back_ns {
+  height: 28px;
+  position: absolute;
+  top: 42%;
+  margin-top: -8px;
+  left: 15px;
+}
+.main .login_zc .login_zc_ns {
+  padding: 5px 15px;
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
+}
+.main .login_zc .login_zc_ns .login-sub {
+  height: 264px;
+  overflow: auto;
+}
+.main .login_zc .login_zc_ns .login-sub .login_acnum_ns {
+  margin-top: 7px;
+  position: relative;
+}
+.main .login_zc .login_zc_ns .login-sub .login_acnum_ns i {
+  height: 26px;
+  position: absolute;
+  left: 19px;
+  top: 15px;
+  font-size: 20px;
+  color: black;
+}
+.main .login_zc .login_zc_ns .login-sub .login_acnum_ns input {
+  width: 100%;
+  padding-left: 52px;
+  color: #9d9d9d;
+  border-radius: 6px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  height: 58px;
+  border: 1.5px solid #d5d5d5;
+  font-size: 18px;
+}
+.main .login_zc .login_zc_ns .login-sub .login_acnum_ns input:focus {
+  outline: 0;
+}
+.main .login_zc .login_zc_ns .login-sub .login_acnum_ns .clear_ns {
+  display: none;
+  position: absolute;
+  right: 58px !important;
+  height: 32px !important;
+  top: 4px !important;
+}
+.main .login_zc .login_zc_ns .login-sub .login_acnum_ns .clear_ns img {
+  height: 0.8rem;
+  position: absolute;
+  left: 0.15rem;
+  top: 0.05rem;
+}
+.main .login_zc .login_zc_ns .login-sub .login_acnum_ns .show_ns {
+  display: none;
+  position: absolute;
+  right: 58px !important;
+  height: 32px !important;
+  top: 5px !important;
+}
+.main .login_zc .login_zc_ns .login-sub .login_acnum_ns .show_ns img {
+  height: 0.8rem;
+  position: absolute;
+  left: 0.15rem;
+  top: 0.05rem;
+}
+.main .login_zc .login_zc_ns .user_agree_ns {
+  margin: 10px 0 0 0;
+}
+.main .login_zc .login_zc_ns .registered_button_ns {
+  margin-top: 10px;
+  font-size: 20px;
+  width: 100%;
+  height: 52px;
+  text-align: center;
+  line-height: 52px;
+  background-color: #32b16c;
+  color: #ffffff;
+  border-radius: 6px;
+  letter-spacing: 4px;
+  border: none;
+}
+.main .account_management {
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  display: none;
+}
+.main .account_management .login_logo_account {
+  text-align: center;
+  border-bottom: 1px solid #d5d5d5;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  background-color: #ffffff;
+  height: 52px;
+}
+.main .account_management .login_logo_account .back_ns {
+  height: 28px;
+  position: absolute;
+  top: 42%;
+  margin-top: -8px;
+  left: 15px;
+}
+.main .account_management .login_way_ns {
+  padding: 5px 15px;
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
+}
+.main .account_management .login_way_ns .account1_ns {
+  text-align: center;
+  margin-top: 13px;
+  font-size: 26px;
+  color: #ffffff;
+  height: 65px;
+  line-height: 65px;
+  background-color: #e0620d;
+  border-radius: 6px;
+}
+.main .account_management .login_way_ns .account2_ns {
+  text-align: center;
+  margin-top: 13px;
+  font-size: 26px;
+  color: #ffffff;
+  height: 65px;
+  line-height: 65px;
+  background-color: #a8a8a8;
+  border-radius: 6px;
+}
+.main .account_management .login_way_ns .account3_ns {
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  font-size: 22px;
+  color: #ffffff;
+  height: 65px;
+  line-height: 65px;
+  background-color: #365896;
+  border-radius: 6px;
+}
+.main .account_changePass {
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  display: none;
+}
+.main .account_changePass .login_logo_changePass {
+  text-align: center;
+  border-bottom: 1px solid #d5d5d5;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  background-color: #ffffff;
+  height: 52px;
+}
+.main .account_changePass .login_logo_changePass .back_ns {
+  height: 28px;
+  position: absolute;
+  top: 42%;
+  margin-top: -8px;
+  left: 15px;
+}
+.main .account_changePass .account_changePass_ns {
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
+}
+.main .account_changePass .account_changePass_ns .login-sub {
+  height: 264px;
+  overflow: auto;
+}
+.main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns {
+  margin-top: 7px;
+  position: relative;
+}
+.main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns i {
+  height: 26px;
+  position: absolute;
+  left: 19px;
+  top: 15px;
+  font-size: 20px;
+  color: black;
+}
+.main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns input {
+  width: 100%;
+  padding-left: 52px;
+  color: #9d9d9d;
+  border-radius: 6px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  height: 58px;
+  border: 1.5px solid #d5d5d5;
+  font-size: 18px;
+}
+.main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns input:focus {
+  outline: 0;
+}
+.main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .clear_ns {
+  display: none;
+  position: absolute;
+  right: 58px !important;
+  height: 32px !important;
+  top: 4px !important;
+}
+.main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .clear_ns img {
+  height: 0.8rem;
+  position: absolute;
+  left: 0.15rem;
+  top: 0.05rem;
+}
+.main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .show_ns {
+  display: none;
+  position: absolute;
+  right: 58px !important;
+  height: 32px !important;
+  top: 5px !important;
+}
+.main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .show_ns img {
+  height: 0.8rem;
+  position: absolute;
+  left: 0.15rem;
+  top: 0.05rem;
+}
+.main .account_changePass .account_changePass_ns .changePass_button_ns {
+  margin-top: 10px;
+  font-size: 26px;
+  width: 100%;
+  height: 52px;
+  text-align: center;
+  line-height: 52px;
+  background-color: #32b16c;
+  color: #ffffff;
+  border-radius: 6px;
+  letter-spacing: 10px;
+  border: none;
+}
+.main .account_play {
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  display: none;
+}
+.main .account_play .login_logo_play {
+  text-align: center;
+  border-bottom: 1px solid #d5d5d5;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  background-color: #ffffff;
+  height: 52px;
+}
+.main .account_play .login_logo_play .back_ns {
+  height: 28px;
+  position: absolute;
+  top: 42%;
+  margin-top: -8px;
+  left: 15px;
+}
+.main .account_play .account_play_ns {
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
+}
+.main .account_play .account_play_ns .login-sub {
+  height: 264px;
+  overflow: auto;
+}
+.main .account_play .account_play_ns .login-sub .login_acnum_ns {
+  margin-top: 7px;
+  position: relative;
+}
+.main .account_play .account_play_ns .login-sub .login_acnum_ns i {
+  height: 26px;
+  position: absolute;
+  left: 19px;
+  top: 15px;
+  font-size: 20px;
+  color: black;
+}
+.main .account_play .account_play_ns .login-sub .login_acnum_ns input {
+  width: 100%;
+  padding-left: 52px;
+  color: #9d9d9d;
+  border-radius: 6px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  height: 58px;
+  border: 1.5px solid #d5d5d5;
+  font-size: 18px;
+}
+.main .account_play .account_play_ns .login-sub .login_acnum_ns input:focus {
+  outline: 0;
+}
+.main .account_play .account_play_ns .login-sub .login_acnum_ns .clear_ns {
+  display: none;
+  position: absolute;
+  right: 58px !important;
+  height: 32px !important;
+  top: 4px !important;
+}
+.main .account_play .account_play_ns .login-sub .login_acnum_ns .clear_ns img {
+  height: 0.8rem;
+  position: absolute;
+  left: 0.15rem;
+  top: 0.05rem;
+}
+.main .account_play .account_play_ns .login-sub .login_acnum_ns .show_ns {
+  display: none;
+  position: absolute;
+  right: 58px !important;
+  height: 32px !important;
+  top: 5px !important;
+}
+.main .account_play .account_play_ns .login-sub .login_acnum_ns .show_ns img {
+  height: 0.8rem;
+  position: absolute;
+  left: 0.15rem;
+  top: 0.05rem;
+}
+.main .account_play .account_play_ns .play_button_ns {
+  margin-top: 10px;
+  font-size: 26px;
+  width: 100%;
+  height: 52px;
+  text-align: center;
+  line-height: 52px;
+  background-color: #32b16c;
+  color: #ffffff;
+  border-radius: 6px;
+  letter-spacing: 4px;
+  border: none;
+}
+.main .account_fb {
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  display: none;
+}
+.main .account_fb .login_logo_fb {
+  text-align: center;
+  border-bottom: 1px solid #d5d5d5;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  background-color: #ffffff;
+  height: 52px;
+}
+.main .account_fb .login_logo_fb .back_ns {
+  height: 28px;
+  position: absolute;
+  top: 42%;
+  margin-top: -8px;
+  left: 15px;
+}
+.main .account_fb .account_fb_ns {
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
+}
+.main .account_fb .account_fb_ns .login-sub {
+  height: 264px;
+  overflow: auto;
+}
+.main .account_fb .account_fb_ns .login-sub .login_acnum_ns {
+  margin-top: 7px;
+  position: relative;
+}
+.main .account_fb .account_fb_ns .login-sub .login_acnum_ns i {
+  height: 26px;
+  position: absolute;
+  left: 19px;
+  top: 15px;
+  font-size: 20px;
+  color: black;
+}
+.main .account_fb .account_fb_ns .login-sub .login_acnum_ns input {
+  width: 100%;
+  padding-left: 52px;
+  color: #9d9d9d;
+  border-radius: 6px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  height: 58px;
+  border: 1.5px solid #d5d5d5;
+  font-size: 18px;
+}
+.main .account_fb .account_fb_ns .login-sub .login_acnum_ns input:focus {
+  outline: 0;
+}
+.main .account_fb .account_fb_ns .login-sub .login_acnum_ns .clear_ns {
+  display: none;
+  position: absolute;
+  right: 58px !important;
+  height: 32px !important;
+  top: 4px !important;
+}
+.main .account_fb .account_fb_ns .login-sub .login_acnum_ns .clear_ns img {
+  height: 0.8rem;
+  position: absolute;
+  left: 0.15rem;
+  top: 0.05rem;
+}
+.main .account_fb .account_fb_ns .login-sub .login_acnum_ns .show_ns {
+  display: none;
+  position: absolute;
+  right: 58px !important;
+  height: 32px !important;
+  top: 5px !important;
+}
+.main .account_fb .account_fb_ns .login-sub .login_acnum_ns .show_ns img {
+  height: 0.8rem;
+  position: absolute;
+  left: 0.15rem;
+  top: 0.05rem;
+}
+.main .account_fb .account_fb_ns .fb_button_ns {
+  margin-top: 10px;
+  font-size: 26px;
+  width: 100%;
+  height: 52px;
+  text-align: center;
+  line-height: 52px;
+  background-color: #32b16c;
+  color: #ffffff;
+  border-radius: 6px;
+  letter-spacing: 4px;
+  border: none;
+}
+.main .loading {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  background: url("//awscdnfsstwone.1jqmk9f.com/gc_file/webLogin/login/img/loading.gif") no-repeat;
+  background-size: 100%;
+  z-index: 1010;
+  display: none;
+}
+.main .showad {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+.main .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  background-size: 100% 100%;
+  z-index: 9999;
+  display: none;
+}
+.main .bg .close {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  cursor: pointer;
+  background: url(//awscdnfsstwone.1jqmk9f.com/gc_file/webLogin/login/img/close.png) no-repeat;
+  background-size: 100%;
+  z-index: 10;
+}
+.main .bg .tip {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  font-size: 4em;
+  text-align: center;
+  background: #3c3c3c;
+  color: #fff;
+}
+.main .bg .content {
+  width: 88%;
+  height: 58%;
+  position: absolute;
+  top: 21%;
+  left: 6%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  line-height: 30px;
+  text-indent: 2em;
+}
+.main .bg .content .left-conten {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  overflow-y: auto;
+}
+.main .bg .content .right-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  overflow-y: auto;
+  display: none;
+}
+.main .bg .raido {
+  width: 140px;
+  height: 30px;
+  position: absolute;
+  top: 85%;
+  left: 7%;
+}
+.main .bg .raido .left-btn {
+  width: 34px;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #0e61b9;
+  border-radius: 30%;
+}
+.main .bg .raido .right-btn {
+  width: 71%;
+  line-height: 1;
+  height: 73%;
+  position: absolute;
+  font-size: 20px;
+  top: 18%;
+  right: 0;
+}
+.main .bg .raido .left-raido {
+  width: 34px;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: blue;
+  border-radius: 30%;
+  display: none;
+}
+.main .bg .raido .right-raido {
+  width: 1.3rem;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: blue;
+  border-radius: 30%;
+  display: none;
+}
+.main .bg .arrbtn {
+  width: 22%;
+  height: 13%;
+  position: absolute;
+  top: 86%;
+  left: 39%;
+  background: url(//awscdnfsstwone.1jqmk9f.com/gc_file/webLogin/login/img/sure.png) no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.main .quitLogion {
+  width: 290px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  z-index: 1020;
+  display: none;
+}
+.main .quitLogion .login_Title {
+  width: 244px;
+  height: 26px;
+  position: absolute;
+  top: 25px;
+  left: 28px;
+  color: #fff;
+}
+.main .quitLogion .login_Title .title_name {
+  width: 100px;
+  height: 26px;
+  line-height: 26px;
+  text-align: right;
+  position: absolute;
+  left: 0;
+}
+.main .quitLogion .login_Title .title_loding {
+  width: 111px;
+  height: 26px;
+  line-height: 26px;
+  text-align: left;
+  position: absolute;
+  right: 0;
+}
+.main .quitLogion .quit_btn {
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  top: 47px;
+  left: 61px;
+  border: 1px solid #ccc;
+  color: #fff;
+  cursor: pointer;
+}
+@media screen and (max-width: 486px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url("//awscdnnrxwsone.95vy.com/gc_file/webpay/images/loading_bg-mob.jpg") no-repeat;
+    background-size: 100%;
+  }
+  .main .start_bg {
+    width: 100%;
+    height: 100%;
+    background: url("//awscdnnrxwsone.95vy.com/gc_file/webpay/images/start_bg-mob.jpg") no-repeat;
+    background-size: 100% 100%;
+    z-index: 1020;
+  }
+  .main .start_bg .start_game {
+    width: 8rem;
+    height: 3rem;
+    background: url(//awscdnnrxwsone.95vy.com/gc_file/webpay/images/start_game.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 81%;
+    left: 54%;
+    transform: translate(-54%, -81%);
+    cursor: pointer;
+  }
+  .main .automatic_login_ns {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .main .automatic_login_ns .login_logo_ns {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .automatic_login_ns .login_logo_ns .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .automatic_login_ns .login_inp_ns {
+    padding: 0 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use {
+    position: relative;
+    top: 10px;
+    width: 99%;
+    height: 52.5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 7px;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use .sel-img {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use .sel-title {
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    left: 60px;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use .sel-up {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    color: #32b16c;
+    right: 5px;
+    transform: rotate(180deg);
+    display: none;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use .sel-down {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    right: 5px;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list {
+    width: 287px;
+    max-height: 168px;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    z-index: 10;
+    margin-top: 2px;
+    overflow: auto;
+    display: none;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list ul li {
+    width: 100%;
+    height: 52.5px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list ul li .item-img {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list ul li .item-title {
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    left: 60px;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list ul li .item-down {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    right: 5px;
+  }
+  .main .automatic_login_ns .login_inp_ns #enter_game_ns {
+    background: #32b16c;
+    width: 100%;
+    border: none;
+    height: 65px;
+    border-radius: 6px;
+    margin: 7px 0;
+    font-size: 18px;
+    color: white;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_title_ns {
+    margin-top: 16px;
+    height: 32.5px;
+    font-size: 16px;
+    position: relative;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_title_ns .dashed_line {
+    border: 1px dashed #d5d5d5;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_title_ns .handle_head_title {
+    height: 32.5px;
+    line-height: 32.5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -16.25px;
+    left: 50%;
+    margin-left: -87px;
+    width: 170px;
+    color: #787878;
+    text-align: center;
+  }
+  .main .automatic_login_ns .login_inp_ns ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li {
+    width: 33.3%;
+    text-align: center;
+    float: left;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li p {
+    margin: 2px;
+    padding: 0;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background: white;
+    line-height: 50px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    margin-left: 23px;
+    border: 3px solid #cae5f2;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle img {
+    width: 55px;
+    height: 55px;
+    padding-right: 5px;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle i {
+    font-size: 32px;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle2 {
+    background: #a8a8a8;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle2 i {
+    line-height: 50px;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle3 {
+    background: #e0620d;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle3 i {
+    line-height: 46px;
+  }
+  .main .automatic_login_ns .login_inp_ns .clearfix:after {
+    display: block;
+    font-size: 0;
+    clear: both;
+    height: 0;
+    content: "";
+  }
+  .main .login_inp {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .login_inp .login_logo_inp {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .login_inp .login_logo_inp .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .login_inp .login_dl_ns {
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 15px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 58px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns .clear_ns img {
+    height: 0.8rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.25rem;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns .show_ns img {
+    height: 0.8rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.25rem;
+  }
+  .main .login_inp .login_dl_ns .forget_password_ns {
+    padding: 6px 2px;
+    color: black;
+  }
+  .main .login_inp .login_dl_ns .login_button_ns {
+    font-size: 22px;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 10px;
+    letter-spacing: 10px;
+    border: none;
+  }
+  .main .login_inp .login_dl_ns .p_span {
+    width: 100%;
+    margin: 10px 2px;
+  }
+  .main .login_inp .login_dl_ns .p_span .account_management_ns {
+    margin: 0 2px;
+    float: right;
+  }
+  .main .forget_password {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .forget_password .login_logo_forget {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .forget_password .login_logo_forget .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .forget_password .forget_password_ns {
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 15px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 58px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns .clear_ns img {
+    height: 0.8rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.25rem;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns .show_ns img {
+    height: 0.8rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.25rem;
+  }
+  .main .forget_password .forget_password_ns .retrieve_password_ns {
+    margin-top: 16px;
+    font-size: 26px;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    border: none;
+  }
+  .main .login_zc {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .login_zc .login_logo_zc {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .login_zc .login_logo_zc .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .login_zc .login_zc_ns {
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .login_zc .login_zc_ns .login-sub {
+    height: 264px;
+    overflow: auto;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 15px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 58px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns .clear_ns img {
+    height: 0.8rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.25rem;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns .show_ns img {
+    height: 0.8rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.25rem;
+  }
+  .main .login_zc .login_zc_ns .user_agree_ns {
+    margin: 10px 0 0 0;
+  }
+  .main .login_zc .login_zc_ns .registered_button_ns {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 4px;
+    border: none;
+  }
+  .main .account_management {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .account_management .login_logo_account {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .account_management .login_logo_account .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .account_management .login_way_ns {
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .account_management .login_way_ns .account1_ns {
+    text-align: center;
+    margin-top: 13px;
+    font-size: 26px;
+    color: #ffffff;
+    height: 65px;
+    line-height: 65px;
+    background-color: #e0620d;
+    border-radius: 6px;
+  }
+  .main .account_management .login_way_ns .account2_ns {
+    text-align: center;
+    margin-top: 13px;
+    font-size: 26px;
+    color: #ffffff;
+    height: 65px;
+    line-height: 65px;
+    background-color: #a8a8a8;
+    border-radius: 6px;
+  }
+  .main .account_management .login_way_ns .account3_ns {
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-size: 22px;
+    color: #ffffff;
+    height: 65px;
+    line-height: 65px;
+    background-color: #365896;
+    border-radius: 6px;
+  }
+  .main .account_changePass {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .account_changePass .login_logo_changePass {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .account_changePass .login_logo_changePass .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .account_changePass .account_changePass_ns {
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub {
+    height: 264px;
+    overflow: auto;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 15px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 58px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .clear_ns img {
+    height: 0.8rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.25rem;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .show_ns img {
+    height: 0.8rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.25rem;
+  }
+  .main .account_changePass .account_changePass_ns .changePass_button_ns {
+    margin-top: 10px;
+    font-size: 26px;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 10px;
+    border: none;
+  }
+  .main .account_play {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .account_play .login_logo_play {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .account_play .login_logo_play .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .account_play .account_play_ns {
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .account_play .account_play_ns .login-sub {
+    height: 264px;
+    overflow: auto;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 15px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 58px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns .clear_ns img {
+    height: 0.8rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.25rem;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns .show_ns img {
+    height: 0.8rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.25rem;
+  }
+  .main .account_play .account_play_ns .play_button_ns {
+    margin-top: 10px;
+    font-size: 26px;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 4px;
+    border: none;
+  }
+  .main .account_fb {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .account_fb .login_logo_fb {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .account_fb .login_logo_fb .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .account_fb .account_fb_ns {
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .account_fb .account_fb_ns .login-sub {
+    height: 264px;
+    overflow: auto;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 15px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 58px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns .clear_ns img {
+    height: 0.8rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.25rem;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns .show_ns img {
+    height: 0.8rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.25rem;
+  }
+  .main .account_fb .account_fb_ns .fb_button_ns {
+    margin-top: 10px;
+    font-size: 26px;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 4px;
+    border: none;
+  }
+  .main .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    background-size: 100% 100%;
+    z-index: 9999;
+    display: none;
+  }
+  .main .bg .close {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    cursor: pointer;
+    background: url(//awscdnfsstwone.1jqmk9f.com/gc_file/webLogin/login/img/close.png) no-repeat;
+    background-size: 100%;
+    z-index: 10;
+  }
+  .main .bg .tip {
+    width: 100%;
+    height: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    font-size: 2em;
+    text-align: center;
+    background: #3c3c3c;
+    color: #fff;
+  }
+  .main .bg .content {
+    width: 96%;
+    height: 58%;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    line-height: 30px;
+    text-indent: 2em;
+  }
+  .main .bg .content .left-conten {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    overflow-y: auto;
+  }
+  .main .bg .content .right-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    overflow-y: auto;
+    display: none;
+  }
+  .main .bg .raido {
+    width: 140px;
+    height: 30px;
+    position: absolute;
+    top: 74%;
+    left: 7%;
+  }
+  .main .bg .raido .left-btn {
+    width: 34px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #0e61b9;
+    border-radius: 30%;
+  }
+  .main .bg .raido .right-btn {
+    width: 71%;
+    line-height: 1;
+    height: 73%;
+    position: absolute;
+    font-size: 20px;
+    top: 18%;
+    right: 0;
+  }
+  .main .bg .raido .left-raido {
+    width: 34px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: blue;
+    border-radius: 30%;
+    display: none;
+  }
+  .main .bg .raido .right-raido {
+    width: 1.3rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: blue;
+    border-radius: 30%;
+    display: none;
+  }
+  .main .bg .arrbtn {
+    width: 65%;
+    height: 10%;
+    position: absolute;
+    top: 84%;
+    left: 18%;
+    background: url(//awscdnfsstwone.1jqmk9f.com/gc_file/webLogin/login/img/sure.png) no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  .main .quitLogion {
+    width: 290px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    z-index: 1020;
+    display: none;
+  }
+  .main .quitLogion .login_Title {
+    width: 244px;
+    height: 26px;
+    position: absolute;
+    top: 25px;
+    left: 28px;
+    color: #fff;
+  }
+  .main .quitLogion .login_Title .title_name {
+    width: 100px;
+    height: 26px;
+    line-height: 26px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+  }
+  .main .quitLogion .login_Title .title_loding {
+    width: 111px;
+    height: 26px;
+    line-height: 26px;
+    text-align: left;
+    position: absolute;
+    right: 0;
+  }
+  .main .quitLogion .quit_btn {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.8rem;
+    border: 1px solid #ccc;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 1080px) and (min-width: 540px) {
+  .main .automatic_login_ns {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .main .automatic_login_ns .login_logo_ns {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .automatic_login_ns .login_logo_ns .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .automatic_login_ns .login_inp_ns {
+    padding: 0 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use {
+    position: relative;
+    top: 10px;
+    width: 99%;
+    height: 52.5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 7px;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use .sel-img {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use .sel-title {
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    left: 60px;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use .sel-up {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    color: #32b16c;
+    right: 5px;
+    transform: rotate(180deg);
+    display: none;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use .sel-down {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    right: 5px;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list {
+    width: 287px;
+    max-height: 168px;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    z-index: 10;
+    margin-top: 2px;
+    overflow: auto;
+    display: none;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list ul li {
+    width: 100%;
+    height: 52.5px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list ul li .item-img {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list ul li .item-title {
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    left: 60px;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list ul li .item-down {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    right: 5px;
+  }
+  .main .automatic_login_ns .login_inp_ns #enter_game_ns {
+    background: #32b16c;
+    width: 100%;
+    border: none;
+    height: 65px;
+    border-radius: 6px;
+    margin: 7px 0;
+    font-size: 18px;
+    color: white;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_title_ns {
+    margin-top: 16px;
+    height: 32.5px;
+    font-size: 16px;
+    position: relative;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_title_ns .dashed_line {
+    border: 1px dashed #d5d5d5;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_title_ns .handle_head_title {
+    height: 32.5px;
+    line-height: 32.5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -16.25px;
+    left: 50%;
+    margin-left: -87px;
+    width: 170px;
+    color: #787878;
+    text-align: center;
+  }
+  .main .automatic_login_ns .login_inp_ns ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li {
+    width: 33.3%;
+    text-align: center;
+    float: left;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li p {
+    margin: 2px;
+    padding: 0;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background: white;
+    line-height: 50px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    margin-left: 23px;
+    border: 3px solid #cae5f2;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle img {
+    width: 55px;
+    height: 55px;
+    padding-right: 5px;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle i {
+    font-size: 32px;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle2 {
+    background: #a8a8a8;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle2 i {
+    line-height: 50px;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle3 {
+    background: #e0620d;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle3 i {
+    line-height: 46px;
+  }
+  .main .automatic_login_ns .login_inp_ns .clearfix:after {
+    display: block;
+    font-size: 0;
+    clear: both;
+    height: 0;
+    content: "";
+  }
+  .main .login_inp {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .login_inp .login_logo_inp {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .login_inp .login_logo_inp .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .login_inp .login_dl_ns {
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 15px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 58px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns .clear_ns img {
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns .show_ns img {
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .login_inp .login_dl_ns .forget_password_ns {
+    padding: 6px 2px;
+    color: black;
+  }
+  .main .login_inp .login_dl_ns .login_button_ns {
+    font-size: 22px;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 10px;
+    letter-spacing: 10px;
+    border: none;
+  }
+  .main .login_inp .login_dl_ns .p_span {
+    width: 100%;
+    margin: 10px 2px;
+  }
+  .main .login_inp .login_dl_ns .p_span .account_management_ns {
+    margin: 0 2px;
+    float: right;
+  }
+  .main .forget_password {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .forget_password .login_logo_forget {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .forget_password .login_logo_forget .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .forget_password .forget_password_ns {
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 15px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 58px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns .clear_ns img {
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns .show_ns img {
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .forget_password .forget_password_ns .retrieve_password_ns {
+    margin-top: 16px;
+    font-size: 26px;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    border: none;
+  }
+  .main .login_zc {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .login_zc .login_logo_zc {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 35px;
+  }
+  .main .login_zc .login_logo_zc .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 37%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .login_zc .login_zc_ns {
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .login_zc .login_zc_ns .login-sub {
+    height: 189px;
+    overflow: auto;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 7px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 39px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns .clear_ns img {
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns .show_ns img {
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .login_zc .login_zc_ns .user_agree_ns {
+    margin: 10px 0 0 0;
+  }
+  .main .login_zc .login_zc_ns .registered_button_ns {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 4px;
+    border: none;
+  }
+  .main .account_management {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .account_management .login_logo_account {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .account_management .login_logo_account .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .account_management .login_way_ns {
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .account_management .login_way_ns .account1_ns {
+    text-align: center;
+    margin-top: 13px;
+    font-size: 26px;
+    color: #ffffff;
+    height: 65px;
+    line-height: 65px;
+    background-color: #e0620d;
+    border-radius: 6px;
+  }
+  .main .account_management .login_way_ns .account2_ns {
+    text-align: center;
+    margin-top: 13px;
+    font-size: 26px;
+    color: #ffffff;
+    height: 65px;
+    line-height: 65px;
+    background-color: #a8a8a8;
+    border-radius: 6px;
+  }
+  .main .account_management .login_way_ns .account3_ns {
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-size: 22px;
+    color: #ffffff;
+    height: 65px;
+    line-height: 65px;
+    background-color: #365896;
+    border-radius: 6px;
+  }
+  .main .account_changePass {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .account_changePass .login_logo_changePass {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 35px;
+  }
+  .main .account_changePass .login_logo_changePass .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 37%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .account_changePass .account_changePass_ns {
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub {
+    height: 189px;
+    overflow: auto;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 7px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 39px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .clear_ns img {
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .show_ns img {
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .account_changePass .account_changePass_ns .changePass_button_ns {
+    margin-top: 10px;
+    font-size: 26px;
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 10px;
+    border: none;
+  }
+  .main .account_play {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .account_play .login_logo_play {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 35px;
+  }
+  .main .account_play .login_logo_play .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 37%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .account_play .account_play_ns {
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .account_play .account_play_ns .login-sub {
+    height: 189px;
+    overflow: auto;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 7px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 39px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns .clear_ns img {
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns .show_ns img {
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .account_play .account_play_ns .play_button_ns {
+    margin-top: 10px;
+    font-size: 26px;
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 4px;
+    border: none;
+  }
+  .main .account_fb {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .account_fb .login_logo_fb {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 35px;
+  }
+  .main .account_fb .login_logo_fb .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 37%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .account_fb .account_fb_ns {
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .account_fb .account_fb_ns .login-sub {
+    height: 189px;
+    overflow: auto;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 7px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 39px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns .clear_ns img {
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns .show_ns img {
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .account_fb .account_fb_ns .fb_button_ns {
+    margin-top: 10px;
+    font-size: 26px;
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 4px;
+    border: none;
+  }
+  .main .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    background-size: 100% 100%;
+    z-index: 9999;
+    display: none;
+  }
+  .main .bg .close {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    cursor: pointer;
+    background: url(//awscdnfsstwone.1jqmk9f.com/gc_file/webLogin/login/img/close.png) no-repeat;
+    background-size: 100%;
+    z-index: 10;
+  }
+  .main .bg .tip {
+    width: 100%;
+    height: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    font-size: 2em;
+    text-align: center;
+    background: #3c3c3c;
+    color: #fff;
+  }
+  .main .bg .content {
+    width: 96%;
+    height: 58%;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    line-height: 30px;
+    text-indent: 2em;
+  }
+  .main .bg .content .left-conten {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    overflow-y: auto;
+  }
+  .main .bg .content .right-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    overflow-y: auto;
+    display: none;
+  }
+  .main .bg .raido {
+    width: 140px;
+    height: 30px;
+    position: absolute;
+    top: 74%;
+    left: 7%;
+  }
+  .main .bg .raido .left-btn {
+    width: 34px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #0e61b9;
+    border-radius: 30%;
+  }
+  .main .bg .raido .right-btn {
+    width: 71%;
+    line-height: 1;
+    height: 73%;
+    position: absolute;
+    font-size: 20px;
+    top: 18%;
+    right: 0;
+  }
+  .main .bg .raido .left-raido {
+    width: 34px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: blue;
+    border-radius: 30%;
+    display: none;
+  }
+  .main .bg .raido .right-raido {
+    width: 1.3rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: blue;
+    border-radius: 30%;
+    display: none;
+  }
+  .main .bg .arrbtn {
+    width: 34%;
+    height: 15%;
+    position: absolute;
+    top: 84%;
+    left: 35%;
+    background: url(//awscdnfsstwone.1jqmk9f.com/gc_file/webLogin/login/img/sure.png) no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  .main .quitLogion {
+    width: 290px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    z-index: 1020;
+    display: none;
+  }
+  .main .quitLogion .login_Title {
+    width: 244px;
+    height: 26px;
+    position: absolute;
+    top: 25px;
+    left: 28px;
+    color: #fff;
+  }
+  .main .quitLogion .login_Title .title_name {
+    width: 100px;
+    height: 26px;
+    line-height: 26px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+  }
+  .main .quitLogion .login_Title .title_loding {
+    width: 111px;
+    height: 26px;
+    line-height: 26px;
+    text-align: left;
+    position: absolute;
+    right: 0;
+  }
+  .main .quitLogion .quit_btn {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 56px;
+    left: 74px;
+    border: 1px solid #ccc;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 486px) and (max-width: 980px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .main .automatic_login_ns {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .main .automatic_login_ns .login_logo_ns {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .automatic_login_ns .login_logo_ns .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .automatic_login_ns .login_inp_ns {
+    padding: 0 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use {
+    position: relative;
+    top: 10px;
+    width: 99%;
+    height: 52.5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 7px;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use .sel-img {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use .sel-title {
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    left: 60px;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use .sel-up {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    color: #32b16c;
+    right: 5px;
+    transform: rotate(180deg);
+    display: none;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_use .sel-down {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    right: 5px;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list {
+    width: 287px;
+    max-height: 168px;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    z-index: 10;
+    margin-top: 2px;
+    overflow: auto;
+    display: none;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list ul li {
+    width: 100%;
+    height: 52.5px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list ul li .item-img {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list ul li .item-title {
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    left: 60px;
+  }
+  .main .automatic_login_ns .login_inp_ns .down_list ul li .item-down {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    position: absolute;
+    right: 5px;
+  }
+  .main .automatic_login_ns .login_inp_ns #enter_game_ns {
+    background: #32b16c;
+    width: 100%;
+    border: none;
+    height: 65px;
+    border-radius: 6px;
+    margin: 7px 0;
+    font-size: 18px;
+    color: white;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_title_ns {
+    margin-top: 16px;
+    height: 16.5px;
+    font-size: 16px;
+    position: relative;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_title_ns .dashed_line {
+    border: 1px dashed #d5d5d5;
+  }
+  .main .automatic_login_ns .login_inp_ns .select_title_ns .handle_head_title {
+    height: 32.5px;
+    line-height: 32.5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -16.25px;
+    left: 50%;
+    margin-left: -87px;
+    width: 170px;
+    color: #787878;
+    text-align: center;
+  }
+  .main .automatic_login_ns .login_inp_ns ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li {
+    width: 33.3%;
+    text-align: center;
+    float: left;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li p {
+    margin: 2px;
+    padding: 0;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background: white;
+    line-height: 50px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    margin-left: 23px;
+    border: 3px solid #cae5f2;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle img {
+    width: 55px;
+    height: 55px;
+    padding-right: 5px;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle i {
+    font-size: 32px;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle2 {
+    background: #a8a8a8;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle2 i {
+    line-height: 50px;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle3 {
+    background: #e0620d;
+  }
+  .main .automatic_login_ns .login_inp_ns ul li .handle3 i {
+    line-height: 46px;
+  }
+  .main .automatic_login_ns .login_inp_ns .clearfix:after {
+    display: block;
+    font-size: 0;
+    clear: both;
+    height: 0;
+    content: "";
+  }
+  .main .login_inp {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .login_inp .login_logo_inp {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .login_inp .login_logo_inp .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .login_inp .login_dl_ns {
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 15px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 58px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns .clear_ns img {
+    height: 0.6rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.15rem;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .login_inp .login_dl_ns .login_acnum_ns .show_ns img {
+    height: 0.6rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.15rem;
+  }
+  .main .login_inp .login_dl_ns .forget_password_ns {
+    padding: 6px 2px;
+    color: black;
+  }
+  .main .login_inp .login_dl_ns .login_button_ns {
+    font-size: 22px;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 10px;
+    letter-spacing: 10px;
+    border: none;
+  }
+  .main .login_inp .login_dl_ns .p_span {
+    width: 100%;
+    margin: 10px 2px;
+  }
+  .main .login_inp .login_dl_ns .p_span .account_management_ns {
+    margin: 0 2px;
+    float: right;
+  }
+  .main .forget_password {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .forget_password .login_logo_forget {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .forget_password .login_logo_forget .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .forget_password .forget_password_ns {
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 19px;
+    top: 15px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 58px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns .clear_ns img {
+    height: 0.6rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.15rem;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .forget_password .forget_password_ns .login_acnum_ns .show_ns img {
+    height: 0.6rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.15rem;
+  }
+  .main .forget_password .forget_password_ns .retrieve_password_ns {
+    margin-top: 16px;
+    font-size: 26px;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    border: none;
+  }
+  .main .login_zc {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .login_zc .login_logo_zc {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 35px;
+  }
+  .main .login_zc .login_logo_zc .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 34%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .login_zc .login_zc_ns {
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .login_zc .login_zc_ns .login-sub {
+    height: 180px;
+    overflow: auto;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 17px;
+    top: 6px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 37px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns .clear_ns img {
+    height: 0.4rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .login_zc .login_zc_ns .login-sub .login_acnum_ns .show_ns img {
+    height: 0.4rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .login_zc .login_zc_ns .user_agree_ns {
+    margin: 5px 0 0 0;
+  }
+  .main .login_zc .login_zc_ns .registered_button_ns {
+    margin-top: 5px;
+    font-size: 20px;
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 4px;
+    border: none;
+  }
+  .main .account_management {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .account_management .login_logo_account {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 52px;
+  }
+  .main .account_management .login_logo_account .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .account_management .login_way_ns {
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .account_management .login_way_ns .account1_ns {
+    text-align: center;
+    margin-top: 13px;
+    font-size: 26px;
+    color: #ffffff;
+    height: 65px;
+    line-height: 65px;
+    background-color: #e0620d;
+    border-radius: 6px;
+  }
+  .main .account_management .login_way_ns .account2_ns {
+    text-align: center;
+    margin-top: 13px;
+    font-size: 26px;
+    color: #ffffff;
+    height: 65px;
+    line-height: 65px;
+    background-color: #a8a8a8;
+    border-radius: 6px;
+  }
+  .main .account_management .login_way_ns .account3_ns {
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-size: 22px;
+    color: #ffffff;
+    height: 65px;
+    line-height: 65px;
+    background-color: #365896;
+    border-radius: 6px;
+  }
+  .main .account_changePass {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .account_changePass .login_logo_changePass {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 35px;
+  }
+  .main .account_changePass .login_logo_changePass .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 34%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .account_changePass .account_changePass_ns {
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub {
+    height: 187px;
+    overflow: auto;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 17px;
+    top: 6px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 39px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .clear_ns img {
+    height: 0.4rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .account_changePass .account_changePass_ns .login-sub .login_acnum_ns .show_ns img {
+    height: 0.4rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .account_changePass .account_changePass_ns .changePass_button_ns {
+    margin-top: 10px;
+    font-size: 26px;
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 10px;
+    border: none;
+  }
+  .main .account_play {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .account_play .login_logo_play {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 35px;
+  }
+  .main .account_play .login_logo_play .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 34%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .account_play .account_play_ns {
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .account_play .account_play_ns .login-sub {
+    height: 187px;
+    overflow: auto;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 17px;
+    top: 6px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 39px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns .clear_ns img {
+    height: 0.4rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .account_play .account_play_ns .login-sub .login_acnum_ns .show_ns img {
+    height: 0.4rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .account_play .account_play_ns .play_button_ns {
+    margin-top: 10px;
+    font-size: 26px;
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 4px;
+    border: none;
+  }
+  .main .account_fb {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+  }
+  .main .account_fb .login_logo_fb {
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    height: 35px;
+  }
+  .main .account_fb .login_logo_fb .back_ns {
+    height: 28px;
+    position: absolute;
+    top: 34%;
+    margin-top: -8px;
+    left: 15px;
+  }
+  .main .account_fb .account_fb_ns {
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+  }
+  .main .account_fb .account_fb_ns .login-sub {
+    height: 187px;
+    overflow: auto;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns {
+    margin-top: 7px;
+    position: relative;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns i {
+    height: 26px;
+    position: absolute;
+    left: 17px;
+    top: 6px;
+    font-size: 20px;
+    color: black;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns input {
+    width: 100%;
+    padding-left: 52px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    height: 39px;
+    border: 1.5px solid #d5d5d5;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns input:focus {
+    outline: 0;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns .clear_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 4px !important;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns .clear_ns img {
+    height: 0.4rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns .show_ns {
+    display: none;
+    position: absolute;
+    right: 58px !important;
+    height: 32px !important;
+    top: 5px !important;
+  }
+  .main .account_fb .account_fb_ns .login-sub .login_acnum_ns .show_ns img {
+    height: 0.4rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.05rem;
+  }
+  .main .account_fb .account_fb_ns .fb_button_ns {
+    margin-top: 10px;
+    font-size: 26px;
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background-color: #32b16c;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 4px;
+    border: none;
+  }
+  .main .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    background-size: 100% 100%;
+    z-index: 9999;
+    display: none;
+  }
+  .main .bg .close {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    cursor: pointer;
+    background: url(//awscdnfsstwone.1jqmk9f.com/gc_file/webLogin/login/img/close.png) no-repeat;
+    background-size: 100%;
+    z-index: 10;
+  }
+  .main .bg .tip {
+    width: 100%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    font-size: 2em;
+    text-align: center;
+    background: #3c3c3c;
+    color: #fff;
+  }
+  .main .bg .content {
+    width: 88%;
+    height: 58%;
+    position: absolute;
+    top: 21%;
+    left: 6%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    line-height: 30px;
+    text-indent: 2em;
+  }
+  .main .bg .content .left-conten {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    overflow-y: auto;
+  }
+  .main .bg .content .right-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    overflow-y: auto;
+    display: none;
+  }
+  .main .bg .raido {
+    width: 140px;
+    height: 30px;
+    position: absolute;
+    top: 85%;
+    left: 7%;
+  }
+  .main .bg .raido .left-btn {
+    width: 34px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #0e61b9;
+    border-radius: 30%;
+  }
+  .main .bg .raido .right-btn {
+    width: 71%;
+    line-height: 1;
+    height: 73%;
+    position: absolute;
+    font-size: 20px;
+    top: 18%;
+    right: 0;
+  }
+  .main .bg .raido .left-raido {
+    width: 34px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: blue;
+    border-radius: 30%;
+    display: none;
+  }
+  .main .bg .raido .right-raido {
+    width: 1.3rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: blue;
+    border-radius: 30%;
+    display: none;
+  }
+  .main .bg .arrbtn {
+    width: 168px;
+    height: 43px;
+    position: absolute;
+    top: 86%;
+    left: 39%;
+    background: url(//awscdnfsstwone.1jqmk9f.com/gc_file/webLogin/login/img/sure.png) no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  .main .quitLogion {
+    width: 290px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    z-index: 1020;
+    display: none;
+  }
+  .main .quitLogion .login_Title {
+    width: 244px;
+    height: 26px;
+    position: absolute;
+    top: 25px;
+    left: 28px;
+    color: #fff;
+  }
+  .main .quitLogion .login_Title .title_name {
+    width: 157px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+  }
+  .main .quitLogion .login_Title .title_loding {
+    width: 111px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+  }
+  .main .quitLogion .quit_btn {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 53px;
+    left: 88px;
+    border: 1px solid #ccc;
+    color: #fff;
+    cursor: pointer;
+  }
+}

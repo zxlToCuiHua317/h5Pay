@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Css结构 -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/duud.css?type=1.1.1">
+</head>
+
+<body>
+    <input type="text" name="" id="btn" value="点我">
+</body>
+
+</html>
+<script src="https://connect.facebook.net/en_US/fbinstant.6.2.js"></script>
+<script src="./js/jquery.min.js"></script>
+<!-- 适配 -->
+<script src="./js/getWidth.js"></script>
+<!-- 渠道列表 -->
+<script src="./js/payConfig.js"></script>
+<!-- 结构 -->
+<script src="./js/index.js"></script>
+<!-- <script src="./js/yasuojs.js"></script>  -->
+<!-- <script src="./js/jiami.config.js"></script> -->
+<!-- 存储 -->
+<script src="./js/ch_stage.js"></script>
+<!-- 语言 -->
+<!-- <script src="./js/language.config.js"></script> -->
+<!-- 请求api -->
+<script src="./js/api_URL.config.js"></script>
+
+<script>
+    let toCacheInfo
+
+    // $(function () {
+    //     console.log(AllLanguage)
+    //     setData()
+    //     console.log(getData())
+    //     // FbLogin().then(res => {
+    //     //     console.log(res)
+    //     // })
+    // })
+    $("#btn").click(function () {
+
+        // FbLogin().then(res => {
+        //     console.log(res)
+        // })
+
+        toCacheInfo = {
+            ck: "6e44f27380aa1352a2802fd917c17aef",
+            passport: "3000159238771347200",
+            sitecode: "NAJBFBINSTANT",
+            t: "1593499923619",
+            username: "159238771347200"
+        }
+
+        var pay = new Pay({
+            gameCode: "NAJB",
+            serverCode: "najb1",
+            siteCode: "NAJBFBINSTANT",
+            packageName: 540954993254752,
+            language: "TW",
+            mateLanguage: AllLanguage,
+            os: "android",
+            glevel: "1",
+            param: "",
+            itemCode: "czdtxgoldtw05",
+            passport: toCacheInfo.passport,
+            t: toCacheInfo.t,
+            ck: toCacheInfo.ck,
+            handleCallBakc: "cuihua",
+            api_URL: api_URL
+        });
+        pay.init()
+
+    })
+
+    function cuihua(itemCode) {
+
+        $(".pay-box").hide()
+        alert(itemCode)
+    }
+</script>

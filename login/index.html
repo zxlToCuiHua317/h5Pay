@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//awscdnnrxwsone.95vy.com/gc_file/webpay/css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="//awscdnnrxwsone.95vy.com/gc_file/webpay/css/pay.css?type=1.1.1">
+    <style>
+        
+
+        
+    </style>
+</head>
+
+
+<body>
+    <input type="text" name="" id="click">
+</body>
+<script src="//awscdnnrxwsone.95vy.com/gc_file/webpay/js/jquery.min.js"></script>
+<script src="//awscdnnrxwsone.95vy.com/gc_file/webpay/js/getWidth.js"></script>
+<script src="//awscdnnrxwsone.95vy.com/gc_file/webpay/js/api.js"></script>
+<script src="//awscdnnrxwsone.95vy.com/gc_file/webpay/js/formatting.js"></script>
+<script src="//awscdnnrxwsone.95vy.com/gc_file/webpay/js/checkStatu.js"></script>
+<script src="//awscdnnrxwsone.95vy.com/gc_file/webpay/js/language.js"></script>
+<script src="//awscdnnrxwsone.95vy.com/gc_file/webpay/js/config.js"></script>
+<script src="./js/login.js"></script>
+<script src="//awscdnnrxwsone.95vy.com/gc_file/webpay/js/index.js"></script>
+
+<!-- 请求api -->
+<script>
+    var login = new Login({
+        gameCode: "NRXWS",
+        isIPGame: "y",
+        language: "TW",
+        os: "android",
+        packageName: "",
+        packageVersion: null,
+        siteCode: "NRXWSANDROID",
+    })
+    login.init(function (res) {
+        console.log(res)
+    })
+
+    $("#click").click(function () {
+
+        // console.log(login._uploadParams())
+        toCacheInfo = {
+            ck: "5552d3301fe00c0e0ac8843a605976a3",
+            passport: "9000137041939462675",
+            sitecode: "NRXWSANDROID",
+            t: "1602640373144",
+            username: "zxc134223"
+        }
+
+        var pay = new Pay({
+            gameCode: "NRXWS",
+            serverCode: "nrxws1",
+            siteCode: "NRXWSANDROID",
+            packageName: 540954993254752,
+            language: "TW",
+            os: "android",
+            glevel: "1",
+            param: "",
+            itemCode: "rxtw_gold_08",
+            passport: toCacheInfo.passport,
+            t: toCacheInfo.t,
+            ck: toCacheInfo.ck,
+            handleCallBakc: "cuihua",
+            api_URL: api_URL
+        });
+        pay.init()
+    })
+</script>
+
+</html>

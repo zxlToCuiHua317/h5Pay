@@ -1,0 +1,1279 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  text-align: left;
+}
+.main .convP {
+  width: 2.33rem;
+  height: 0.8rem;
+}
+.main .convP #convP {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+.main .convOt {
+  width: 2.33rem;
+  height: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 5rem;
+}
+.main .convOt #convOt {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+.main .closeWin {
+  width: 2.33rem;
+  height: 0.8rem;
+  position: absolute;
+  top: 4rem;
+  left: 5rem;
+}
+.main .closeWin #closeWin {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+.main .pay-box {
+  background: #fff;
+  border-radius: 15px;
+  width: 390px;
+  height: 290px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main .pay-box .pay-main {
+  width: 390px;
+  height: 290px;
+}
+.main .pay-box .pay-main .pay-title {
+  width: 390px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #666;
+  margin-bottom: 10px;
+}
+.main .pay-box .pay-main .pay-back {
+  width: 44px;
+  height: 43px;
+  position: absolute;
+  top: 0rem;
+  left: 0.1rem;
+  cursor: pointer;
+}
+.main .pay-box .pay-main .pay-gameName {
+  width: 277px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 22px;
+  text-align: center;
+  position: absolute;
+  top: 0.1rem;
+  left: 1.4rem;
+  font-weight: 100;
+}
+.main .pay-box .pay-main .pay-middle {
+  width: 360px;
+  height: 156px;
+  position: absolute;
+  top: 68px;
+  left: 16px;
+  font-weight: 100;
+}
+.main .pay-box .pay-main .pay-middle .pay-orderNum {
+  font-size: 20px;
+}
+.main .pay-box .pay-main .pay-middle .pay-selfNum {
+  width: 115px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+}
+.main .pay-box .pay-main .pay-middle .pay-orderContent {
+  width: 360px;
+  height: 110px;
+  position: absolute;
+  top: 45px;
+  font-size: 20px;
+}
+.main .pay-box .pay-main .pay-middle .pay-orderContent .pay-o-info {
+  width: 360px;
+  height: 100px;
+}
+.main .pay-box .pay-main .pay-middle .pay-orderContent .pay-o-title {
+  margin-bottom: 15px;
+}
+.main .pay-box .pay-main .pay-middle .pay-orderContent .pay-o-center {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #b0420f;
+}
+.main .pay-box .pay-main .pay-middle .pay-orderContent .pay-o-tip {
+  color: #b0420f;
+  display: none;
+}
+.main .pay-box .pay-main .pay-fotter {
+  width: 250px;
+  height: 35px;
+  position: absolute;
+  bottom: 21px;
+  left: 74px;
+}
+.main .pay-box .pay-main .pay-fotter .pay-affimBuy {
+  width: 100%;
+  height: 100%;
+}
+.main .pay-box .pay-main .pay-fotter .pay-affimBuy .pay-buy {
+  width: 100%;
+  height: 100%;
+  background: #ae400f;
+  color: #fff;
+  font-size: 16px;
+}
+.main .pay-box .pay-main .pay-fotter .pay-affimBuy .exchangeBuy {
+  width: 100%;
+  height: 100%;
+  background: #ae400f;
+  color: #fff;
+  font-size: 16px;
+  display: none;
+}
+.main .buyPonit {
+  width: 10rem;
+  height: 100%;
+  background-color: #eee;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: none;
+}
+.main .buyPonit .nav {
+  width: 10rem;
+  height: 1.12rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2da7fd;
+}
+.main .buyPonit .nav .nav-back {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .buyPonit .nav .nav-back .icon {
+  width: 100%;
+  height: 100%;
+}
+.main .buyPonit .nav .nav-title {
+  width: 3rem;
+  height: 1.12rem;
+  line-height: 1.12rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 3.5rem;
+  color: #fff;
+  font-size: 18px;
+}
+.main .buyPonit .nav .index {
+  width: 1.16rem;
+  height: 0.68rem;
+  line-height: 0.68rem;
+  text-align: center;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.1rem;
+  border-radius: 5px;
+  background: #fff;
+  color: #2da7fd;
+}
+.main .buyPonit .contant {
+  width: 10rem;
+  height: 2.67rem;
+  position: absolute;
+  top: 1.12rem;
+  left: 0;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  font-weight: 100;
+}
+.main .buyPonit .contant .contant-title {
+  width: 7rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: left;
+  position: absolute;
+  top: 0.5rem;
+  left: 1.5rem;
+  font-size: 18px;
+  color: #2da7fd;
+}
+.main .buyPonit .contant .contant-title .username {
+  color: #000;
+}
+.main .buyPonit .contant .contant-point {
+  width: 7rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: left;
+  position: absolute;
+  top: 1.25rem;
+  left: 1.5rem;
+  font-size: 18px;
+  color: #2da7fd;
+}
+.main .buyPonit .selectDit {
+  width: 10rem;
+  max-height: 8.95rem;
+  position: absolute;
+  top: 4.1rem;
+  border-top: 1px solid #ccc;
+  overflow: auto;
+}
+.main .buyPonit .selectDit ul {
+  padding: 10px;
+}
+.main .buyPonit .selectDit ul li {
+  position: relative;
+  border: 1px solid #a7a8ab;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0.4rem 0;
+  margin-bottom: 0.133333rem;
+}
+.main .buyPonit .selectDit ul li .pay-icon {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.3rem;
+  border-right: 1px solid #ccc;
+  margin-right: 0.3rem;
+}
+.main .buyPonit .selectDit ul li .pay-icon img {
+  width: 2.133333rem;
+  height: 0.693333rem;
+}
+.main .buyPonit .selectDit ul li .pay-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.32rem;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+.main .excPoint {
+  width: 10rem;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: none;
+}
+.main .excPoint::-webkit-scrollbar {
+  width: 8px;
+  background: white;
+}
+.main .excPoint::-webkit-scrollbar-corner,
+.main .excPoint::-webkit-scrollbar-thumb,
+.main .excPoint::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+.main .excPoint::-webkit-scrollbar-corner,
+.main .excPoint::-webkit-scrollbar-track {
+  /* 滚动条轨道 */
+  background-color: rgba(180, 160, 120, 0.1);
+  box-shadow: inset 0 0 1px rgba(180, 160, 120, 0.5);
+}
+.main .excPoint::-webkit-scrollbar-thumb {
+  /* 滚动条手柄 */
+  background-color: #00adb5;
+}
+.main .excPoint .ex-nav {
+  width: 10rem;
+  height: 1.12rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2da7fd;
+}
+.main .excPoint .ex-nav .ex-nav-back {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0.35rem;
+}
+.main .excPoint .ex-nav .ex-nav-back .icon {
+  width: 100%;
+  height: 100%;
+}
+.main .excPoint .ex-nav .ex-nav-title {
+  width: 3rem;
+  height: 1.12rem;
+  line-height: 1.12rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 3.5rem;
+  color: #fff;
+  font-size: 18px;
+}
+.main .excPoint .ex-nav .ex-index {
+  width: 1.16rem;
+  height: 0.68rem;
+  line-height: 0.68rem;
+  text-align: center;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.1rem;
+  border-radius: 5px;
+  background: #fff;
+  color: #2da7fd;
+}
+.main .excPoint .ex-contant {
+  width: 10rem;
+  position: absolute;
+  top: 1.12rem;
+  background: #fff;
+}
+.main .excPoint .ex-contant ul {
+  width: 96%;
+  margin-left: 2%;
+}
+.main .excPoint .ex-contant ul li {
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+.main .excPoint .ex-contant ul li a {
+  color: #666;
+  display: inline-block;
+  width: 100%;
+  margin: 1em 0;
+}
+.main .excPoint .ex-contant ul li .b_link {
+  float: left;
+  width: 60%;
+  line-height: 1.1rem;
+  margin-left: 0.5rem;
+  display: inline;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main .excPoint .ex-contant ul li .r_icon {
+  margin: 1em 0;
+  position: absolute;
+  top: 0.35rem;
+  right: 0.3rem;
+  width: 0.25rem;
+  height: 0.43rem;
+  background: url("../images/r_icon.png") no-repeat center;
+  background-size: 100%;
+}
+.main .excPoint .point_code {
+  width: 8rem;
+  height: 1rem;
+  line-height: 1rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 1rem;
+}
+.main .excPoint .point_code span {
+  font-size: 20px;
+}
+.main .excPoint #inpCode {
+  width: 85%;
+  height: 1rem;
+  line-height: 1rem;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  text-align: center;
+  border: 1px solid #2da7fd;
+  font-size: 20px;
+}
+.main .excPoint .point_pass {
+  width: 8rem;
+  height: 1rem;
+  line-height: 1rem;
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+}
+.main .excPoint .point_pass span {
+  font-size: 20px;
+}
+.main .excPoint #inpPass {
+  width: 85%;
+  height: 1rem;
+  line-height: 1rem;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  text-align: center;
+  border: 1px solid #2da7fb;
+  font-size: 20px;
+}
+.main .excPoint .coinPay {
+  width: 3rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  position: absolute;
+  top: 5.5rem;
+  left: 3.8rem;
+}
+.main .excPoint #coinBtn {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  background: #ae400f;
+}
+.main .excPoint .icon_open {
+  position: absolute;
+  top: 0rem;
+  right: 0.3rem;
+}
+.main .excPoint .close {
+  position: absolute;
+  top: 0rem;
+  right: 0.3rem;
+  display: none;
+}
+.main .excPoint_Sel {
+  width: 10rem;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: none;
+}
+.main .excPoint_Sel .Selex-nav {
+  width: 10rem;
+  height: 1.12rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2da7fd;
+}
+.main .excPoint_Sel .Selex-nav .Selex-nav-back {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .excPoint_Sel .Selex-nav .Selex-nav-back .icon {
+  width: 100%;
+  height: 100%;
+}
+.main .excPoint_Sel .Selex-nav .Selex-nav-title {
+  width: 3rem;
+  height: 1.12rem;
+  line-height: 1.12rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 3.5rem;
+  color: #fff;
+  font-size: 18px;
+}
+.main .excPoint_Sel .Selex-nav .Selex-index {
+  width: 1.16rem;
+  height: 0.68rem;
+  line-height: 0.68rem;
+  text-align: center;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.1rem;
+  border-radius: 5px;
+  background: #fff;
+  color: #2da7fd;
+}
+.main .excPoint_Sel .Selex-contant {
+  width: 10rem;
+  position: absolute;
+  top: 1.12rem;
+  background: #fff;
+}
+.main .excPoint_Sel .Selex-contant ul {
+  width: 96%;
+  margin-left: 2%;
+}
+.main .excPoint_Sel .Selex-contant ul li {
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+.main .excPoint_Sel .Selex-contant ul li a {
+  color: #666;
+  display: inline-block;
+  width: 100%;
+  margin: 1em 0;
+}
+.main .excPoint_Sel .Selex-contant ul li .b_link {
+  float: left;
+  width: 60%;
+  line-height: 1.1rem;
+  margin-left: 0.5rem;
+  display: inline;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main .excPoint_Sel .Selex-contant ul li .r_icon {
+  margin: 1em 0;
+  position: absolute;
+  top: 0.35rem;
+  right: 0.3rem;
+  width: 0.25rem;
+  height: 0.43rem;
+  background: url("../images/r_icon.png") no-repeat center;
+  background-size: 100%;
+}
+.main .pay_err_tip {
+  width: 9.51rem;
+  height: 7.45rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -41%);
+  background: url("../images/pay_err_tip.png") no-repeat;
+  background-size: 100%;
+  z-index: 1100;
+  display: none;
+}
+.main .pay_err_tip .pay_err_close {
+  width: 0.6rem;
+  height: 0.6rem;
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  background: url(../images/err_close.png) no-repeat;
+  background-size: 100%;
+}
+.main .pay_err_tip .pay_err_content {
+  width: 6.67rem;
+  line-height: 0.63rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.55rem;
+  color: #fff;
+  font-weight: 100;
+}
+.main .showad {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+.main .load-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1010;
+  display: none;
+}
+.main .load-container .boxLoading {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.main .load-container .boxLoading:before {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background: #000;
+  opacity: 0.1;
+  position: absolute;
+  top: 59px;
+  left: 0;
+  border-radius: 50%;
+  -webkit-animation: shadow 0.5s linear infinite;
+  animation: shadow 0.5s linear infinite;
+}
+.main .load-container .boxLoading:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: #00adb5;
+  -webkit-animation: animate 0.5s linear infinite;
+  animation: animate 0.5s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+}
+@-webkit-keyframes animate {
+  17% {
+    border-bottom-right-radius: 3px;
+  }
+  25% {
+    transform: translateY(9px) rotate(22.5deg);
+  }
+  50% {
+    transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+    border-bottom-right-radius: 40px;
+  }
+  75% {
+    transform: translateY(9px) rotate(67.5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+@keyframes animate {
+  17% {
+    border-bottom-right-radius: 3px;
+  }
+  25% {
+    transform: translateY(9px) rotate(22.5deg);
+  }
+  50% {
+    transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+    border-bottom-right-radius: 40px;
+  }
+  75% {
+    transform: translateY(9px) rotate(67.5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+@-webkit-keyframes shadow {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1);
+  }
+}
+@keyframes shadow {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1);
+  }
+}
+@media screen and (max-width: 486px) {
+  .main .convP {
+    width: 2.33rem;
+    height: 0.8rem;
+  }
+  .main .convP #convP {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+  }
+  .main .convOt {
+    width: 2.33rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 0;
+    left: 5rem;
+  }
+  .main .convOt #convOt {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+  }
+  .main .closeWin {
+    width: 2.33rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+  }
+  .main .closeWin #closeWin {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+  }
+  .main .pay-box {
+    background: #fff;
+    border-radius: 15px;
+    width: 8.85rem;
+    height: 8.38rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -42%);
+    z-index: 10;
+  }
+  .main .pay-box .pay-main {
+    width: 8.85rem;
+    height: 8.38rem;
+  }
+  .main .pay-box .pay-main .pay-title {
+    width: 8.85rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #666;
+    margin-bottom: 10px;
+  }
+  .main .pay-box .pay-main .pay-back {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.3rem;
+    cursor: pointer;
+  }
+  .main .pay-box .pay-main .pay-back .icon {
+    width: 100%;
+    height: 100%;
+  }
+  .main .pay-box .pay-main .pay-gameName {
+    width: 6rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    top: 0.2rem;
+    left: 1.35rem;
+  }
+  .main .pay-box .pay-main .pay-kefu {
+    width: 1.27rem;
+    height: 1.27rem;
+    position: absolute;
+    top: 0.1rem;
+    right: 0.28rem;
+  }
+  .main .pay-box .pay-main .pay-middle {
+    width: 8.5rem;
+    height: 6rem;
+    position: absolute;
+    top: 2rem;
+    left: 0.1rem;
+  }
+  .main .pay-box .pay-main .pay-middle .pay-orderNum {
+    font-size: 18px;
+    position: absolute;
+    left: 0.29rem;
+  }
+  .main .pay-box .pay-main .pay-middle .pay-selfNum {
+    width: 3rem;
+    position: absolute;
+    top: 26px;
+    right: 5.2rem;
+    font-size: 18px;
+  }
+  .main .pay-box .pay-main .pay-middle .pay-orderContent {
+    width: 8rem;
+    height: 2.3rem;
+    position: absolute;
+    top: 2rem;
+    left: 0.25rem;
+    font-size: 16px;
+  }
+  .main .pay-box .pay-main .pay-middle .pay-orderContent .pay-o-info {
+    width: 8rem;
+    height: 2.3rem;
+  }
+  .main .pay-box .pay-main .pay-middle .pay-orderContent .pay-o-title {
+    margin-bottom: 15px;
+  }
+  .main .pay-box .pay-main .pay-middle .pay-orderContent .pay-o-center {
+    margin-bottom: 10px;
+    color: #b0420f;
+  }
+  .main .pay-box .pay-main .pay-middle .pay-orderContent .pay-o-tip {
+    color: #b0420f;
+    display: none;
+  }
+  .main .pay-box .pay-main .pay-fotter {
+    width: 6.25rem;
+    height: 1.25rem;
+    position: absolute;
+    bottom: 0.1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main .pay-box .pay-main .pay-fotter .pay-affimBuy {
+    width: 100%;
+    height: 100%;
+  }
+  .main .pay-box .pay-main .pay-fotter .pay-affimBuy .pay-buy {
+    width: 100%;
+    height: 100%;
+    background: #ae400f;
+    color: #fff;
+    font-size: 18px;
+  }
+  .main .pay-box .pay-main .pay-fotter .pay-affimBuy .exchangeBuy {
+    width: 100%;
+    height: 100%;
+    background: #ae400f;
+    color: #fff;
+    font-size: 18px;
+    display: none;
+  }
+  .main .buyPonit {
+    width: 10rem;
+    height: 100vh;
+    background-color: #eee;
+    display: none;
+  }
+  .main .buyPonit .nav {
+    width: 10rem;
+    height: 1.12rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2da7fd;
+  }
+  .main .buyPonit .nav .nav-back {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0.3rem;
+  }
+  .main .buyPonit .nav .nav-back .icon {
+    width: 100%;
+    height: 100%;
+  }
+  .main .buyPonit .nav .nav-title {
+    width: 3rem;
+    height: 1.12rem;
+    line-height: 1.12rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 3.5rem;
+    color: #fff;
+    font-size: 18px;
+  }
+  .main .buyPonit .nav .index {
+    width: 1.16rem;
+    height: 0.68rem;
+    line-height: 0.68rem;
+    text-align: center;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.1rem;
+    border-radius: 5px;
+    background: #fff;
+    color: #2da7fd;
+  }
+  .main .buyPonit .contant {
+    width: 10rem;
+    height: 2.67rem;
+    position: absolute;
+    top: 1.12rem;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .main .buyPonit .contant .contant-title {
+    width: 7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: left;
+    position: absolute;
+    top: 0.5rem;
+    left: 1.5rem;
+    font-size: 18px;
+    color: #2da7fd;
+  }
+  .main .buyPonit .contant .contant-title .username {
+    color: #000;
+  }
+  .main .buyPonit .contant .contant-point {
+    width: 7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: left;
+    position: absolute;
+    top: 1.25rem;
+    left: 1.5rem;
+    font-size: 18px;
+    color: #2da7fd;
+  }
+  .main .buyPonit .selectDit {
+    width: 10rem;
+    max-height: 10.5rem;
+    position: absolute;
+    top: 4.1rem;
+    border-top: 1px solid #ccc;
+  }
+  .main .buyPonit .selectDit ul {
+    padding: 10px;
+  }
+  .main .buyPonit .selectDit ul li {
+    position: relative;
+    border: 1px solid #a7a8ab;
+    border-radius: 5px;
+    background: #fff;
+    padding: 0.4rem 0;
+    margin-bottom: 0.133333rem;
+  }
+  .main .buyPonit .selectDit ul li .pay-icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0.3rem;
+    border-right: 1px solid #ccc;
+    margin-right: 0.3rem;
+  }
+  .main .buyPonit .selectDit ul li .pay-icon img {
+    width: 2.133333rem;
+    height: 0.693333rem;
+  }
+  .main .buyPonit .selectDit ul li .pay-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.32rem;
+    font-weight: 700;
+    color: #2b2b2b;
+  }
+  .main .excPoint {
+    width: 10rem;
+    height: 100vh;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+  .main .excPoint .ex-nav {
+    width: 10rem;
+    height: 6vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2da7fd;
+  }
+  .main .excPoint .ex-nav .ex-nav-back {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0.3rem;
+  }
+  .main .excPoint .ex-nav .ex-nav-back .icon {
+    width: 100%;
+    height: 100%;
+  }
+  .main .excPoint .ex-nav .ex-nav-title {
+    width: 3rem;
+    height: 1.12rem;
+    line-height: 1.12rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 3.5rem;
+    color: #fff;
+    font-size: 18px;
+  }
+  .main .excPoint .ex-nav .ex-index {
+    width: 1.16rem;
+    height: 0.68rem;
+    line-height: 0.68rem;
+    text-align: center;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.1rem;
+    border-radius: 5px;
+    background: #fff;
+    color: #2da7fd;
+  }
+  .main .excPoint .ex-contant {
+    width: 10rem;
+    position: absolute;
+    top: 1.12rem;
+    background: #fff;
+    overflow-y: auto;
+    height: 94vh;
+  }
+  .main .excPoint .ex-contant ul {
+    width: 96%;
+    margin-left: 2%;
+  }
+  .main .excPoint .ex-contant ul li {
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+    position: relative;
+  }
+  .main .excPoint .ex-contant ul li a {
+    color: #666;
+    display: inline-block;
+    width: 100%;
+    margin: 1em 0;
+  }
+  .main .excPoint .ex-contant ul li .b_link {
+    float: left;
+    width: 60%;
+    line-height: 1.1rem;
+    margin-left: 0.5rem;
+    display: inline;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .main .excPoint .ex-contant ul li .r_icon {
+    margin: 1em 0;
+    position: absolute;
+    top: 0.35rem;
+    right: 0.3rem;
+    width: 0.25rem;
+    height: 0.43rem;
+    background: url("../images/r_icon.png") no-repeat center;
+    background-size: 100%;
+  }
+  .main .excPoint .point_code {
+    width: 8rem;
+    height: 1rem;
+    line-height: 1rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 1rem;
+  }
+  .main .excPoint .point_code span {
+    font-size: 16px;
+  }
+  .main .excPoint #inpCode {
+    width: 85%;
+    height: 1rem;
+    line-height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    text-align: center;
+    border: 1px solid #2da7fd;
+    font-size: 16px;
+  }
+  .main .excPoint .point_pass {
+    width: 8rem;
+    height: 1rem;
+    line-height: 1rem;
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+  }
+  .main .excPoint .point_pass span {
+    font-size: 16px;
+  }
+  .main .excPoint #inpPass {
+    width: 85%;
+    height: 1rem;
+    line-height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    text-align: center;
+    border: 1px solid #2da7fb;
+    font-size: 16px;
+  }
+  .main .excPoint .coinPay {
+    width: 3rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    position: absolute;
+    top: 5.5rem;
+    left: 3.8rem;
+  }
+  .main .excPoint #coinBtn {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background: #ae400f;
+  }
+  .main .excPoint .icon_open {
+    position: absolute;
+    top: 0rem;
+    right: 0.3rem;
+  }
+  .main .excPoint .close {
+    position: absolute;
+    top: 0rem;
+    right: 0.3rem;
+    display: none;
+  }
+  .main .excPoint_Sel {
+    width: 10rem;
+    height: 100vh;
+    background-color: #fff;
+    display: none;
+    overflow: auto;
+    position: hidden;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+  .main .excPoint_Sel .Selex-nav {
+    width: 10rem;
+    height: 6vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2da7fd;
+  }
+  .main .excPoint_Sel .Selex-nav .Selex-nav-back {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0.3rem;
+  }
+  .main .excPoint_Sel .Selex-nav .Selex-nav-back .icon {
+    width: 100%;
+    height: 100%;
+  }
+  .main .excPoint_Sel .Selex-nav .Selex-nav-title {
+    width: 3rem;
+    height: 1.12rem;
+    line-height: 1.12rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 3.5rem;
+    color: #fff;
+    font-size: 18px;
+  }
+  .main .excPoint_Sel .Selex-nav .Selex-index {
+    width: 1.16rem;
+    height: 0.68rem;
+    line-height: 0.68rem;
+    text-align: center;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.1rem;
+    border-radius: 5px;
+    background: #fff;
+    color: #2da7fd;
+  }
+  .main .excPoint_Sel .Selex-contant {
+    width: 10rem;
+    height: 94vh;
+    position: absolute;
+    top: 1.12rem;
+    background: #fff;
+    overflow: auto;
+  }
+  .main .excPoint_Sel .Selex-contant ul {
+    width: 96%;
+    margin-left: 2%;
+  }
+  .main .excPoint_Sel .Selex-contant ul li {
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+    position: relative;
+  }
+  .main .excPoint_Sel .Selex-contant ul li a {
+    color: #666;
+    display: inline-block;
+    width: 100%;
+    margin: 1em 0;
+  }
+  .main .excPoint_Sel .Selex-contant ul li .b_link {
+    float: left;
+    width: 60%;
+    line-height: 1.1rem;
+    margin-left: 0.5rem;
+    display: inline;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .main .excPoint_Sel .Selex-contant ul li .r_icon {
+    margin: 1em 0;
+    position: absolute;
+    top: 0.35rem;
+    right: 0.3rem;
+    width: 0.25rem;
+    height: 0.43rem;
+    background: url("../images/r_icon.png") no-repeat center;
+    background-size: 100%;
+  }
+  .main .pay_err_tip {
+    width: 9.51rem;
+    height: 7.45rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -41%);
+    background: url("../images/pay_err_tip.png") no-repeat;
+    background-size: 100%;
+    z-index: 1100;
+    display: none;
+  }
+  .main .pay_err_tip .pay_err_close {
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 0.65rem;
+    right: 0.65rem;
+    background: url(../images/err_close.png) no-repeat;
+    background-size: 100%;
+  }
+  .main .pay_err_tip .pay_err_content {
+    width: 6.67rem;
+    line-height: 0.63rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.55rem;
+    color: #fff;
+    font-weight: 100;
+  }
+}
